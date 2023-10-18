@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* © 2016 eckblick GbR */
+div.contentArea 				{ position:absolute; display:block; 
+								  margin:10vh 10vw; 
+								  height:68vh; width:72vw; 
+								  padding:6vh 4vw 4vh 4vw; }
+
+
+
+div.contentArea.ueberuns 					{ color:rgba(204,204,204,1.00); }
+div.contentArea.ueberuns p 					{ display:block; width:60%; margin:4% 10% 0 0; float:none; text-align:justify; }
+
+div.contentArea.ueberuns p span.heading  	{ font-size:165%; }
+
+
+
+div.contentArea.leistungen 		{  }
+div.contentArea.leistungen h2	{ display:block; position:absolute; top:24px; right:96px; }
+div.contentArea.leistungen div	{ display:block; float:left; width:13vw; height:13vw; margin:96px 0.5% 32px 0.5%; 
+								  background-color:rgba(0,0,0,0.67); -webkit-border-radius:50%;  border-radius:50%; 
+								  background-repeat:no-repeat; background-size:86%; background-position:center;
+								  text-align:center; line-height:16vw; color:rgba(0,0,0,0.00);
+								  	-webkit-transition: all 433ms ease-in-out;
+									-moz-transition: all 433ms ease-in-out;
+									-ms-transition: all 433ms ease-in-out;
+									-o-transition: all 433ms ease-in-out;
+									transition: all 433ms ease-in-out; }								  
+div.contentArea.leistungen div.leistung:nth-child(1)	{ background-image: url(pic/html5.svg); }						  
+div.contentArea.leistungen div.leistung:nth-child(2)	{ background-image: url(pic/css3.svg); }
+div.contentArea.leistungen div.leistung:nth-child(3)	{ background-image: url(pic/js.svg); }	
+div.contentArea.leistungen div.leistung:nth-child(4)	{ background-image: url(pic/php.svg); }	
+div.contentArea.leistungen div.leistung:nth-child(5)	{ background-image: url(pic/apps.svg); }
+div.contentArea.leistungen div.leistung:nth-child(6)	{ background-image: url(pic/cloud.svg); }
+div.contentArea.leistungen div.leistung:nth-child(7)	{ background-image: url(pic/rd.svg); }
+div.contentArea.leistungen div.leistung:nth-child(8)	{ background-image: url(pic/hosting.svg); }
+div.contentArea.leistungen div.leistung:nth-child(9)	{ background-image: url(pic/datenbanken.svg); }
+div.contentArea.leistungen div.leistung:nth-child(10)	{ background-image: url(pic/performance.svg); }		  
+								  
+div.contentArea.leistungen div:hover	{ background-color:rgba(233,180,0,0.93); background-size:40%; background-position:50% 15%;
+										  line-height:20vw; color:rgba(0,0,0,1.00); }
+
+
+div.contentArea.login form,	
+div.contentArea.kontakt form						{ background-color:rgba(0,0,0,0.45); padding:24px; display:block; width:67%; max-width:640px; margin-top:128px; }
+
+div.contentArea.login form input[type="text"],
+div.contentArea.login form input[type="password"],
+div.contentArea.kontakt form input[type="text"],
+div.contentArea.kontakt form input[type="tel"],
+div.contentArea.kontakt form input[type="email"],
+ div.contentArea.kontakt form textarea 						{ margin-bottom:10px; padding:2%; width:96%; background-color:rgba(240,240,240,1.00); }
+div.contentArea.kontakt form textarea 						{  }
+
+div.contentArea.login form a,
+div.contentArea.login form button[type="submit"],
+div.contentArea.kontakt form button[type="submit"]			{ padding:0%; width:100%; background-color:rgba(233,180,0,1.00); line-height:48px; 
+															  -webkit-transition: all 433ms ease-in-out;
+															  -moz-transition: all 433ms ease-in-out;
+															  -ms-transition: all 433ms ease-in-out;
+															  -o-transition: all 433ms ease-in-out;
+															  transition: all 433ms ease-in-out; }
+div.contentArea.login form a:hover,														  
+div.contentArea.login form button[type="submit"]:hover,															  
+div.contentArea.kontakt form button[type="submit"]:hover	{ background-color:rgba(0,0,0,0.67); color:rgba(233,180,0,1.00); }
+
+div.contentArea.login form a								{ padding:0 96px; }
+
+
+
+div.contentArea.impressum 									{ font-weight:100; color:rgba(200,200,200,0.90); background-color: rgba(0,0,0,0.30); overflow:hidden;}
+
+div.contentArea.impressum section.impr 						{ display:block; float:left; position:relative; }
+div.contentArea.impressum section:nth-child(3) 				{ margin:25vh 3% 0 0; width:140px; } /* erste  TextBox */
+div.contentArea.impressum section:nth-child(4) 				{ margin:25vh 3% 0 0; width:210px; } /* zweite TextBox */
+div.contentArea.impressum section:nth-child(5) 				{ margin:25vh 0 0 0;  width:480px; } /* dritte TextBox */
+div.contentArea.impressum section.impr img					{ display:block; width:100%; height:auto; }
+
+
+
+@media only screen
+	and (max-width: 1280px) { 
+	
+	div.contentArea.impressum 	{ font-weight:100; font-size:86%; color:rgba(200,200,200,0.90); }
+	
+	div.contentArea.impressum section:nth-child(3) 				{ margin:160px 3% 0 0; width:110px;  } /* erste  TextBox */
+	div.contentArea.impressum section:nth-child(4) 				{ margin:160px 3% 0 0; width:170px;  } /* zweite TextBox */
+	div.contentArea.impressum section:nth-child(5) 				{ margin:160px 0 0 0;  width:400px;  } /* dritte TextBox */
+	
+	
+	div.contentArea.kontakt form						{ margin-top:40px; }
+	
+	div.contentArea.ueberuns 					        { font-size:93%; }
+	
+	
+	}
+
+
+@media only screen
+	and (max-width: 1024px) { 
+	
+	div.contentArea 			{ position:absolute; display:block; 
+								  margin:8vh 8vw auto 15vw; 
+								  height:80vh; width:75vw; 
+								  padding:1vh 1vw 1vh 1vw; }
+	/*------------------------------------------------------------------------------------*/							  
+	div.contentArea.ueberuns p 					{ display:block; width:80%; margin:4% 0 0 0;  }
+	div.contentArea.ueberuns p span.heading  	{ font-size:145%; }
+	/*------------------------------------------------------------------------------------*/	
+	div.contentArea.impressum section:nth-child(3) 		{ margin:50px 4% 0 0; width:15%; } /* erste  TextBox */
+	div.contentArea.impressum section:nth-child(4) 		{ margin:50px 4% 0 0; width:45%; } /* zweite TextBox */
+	div.contentArea.impressum section:nth-child(5) 		{ margin:30px 0 0 0;  width:360px; } /* dritte TextBox */
+	div.contentArea.impressum section.impr img			{ display:block; width:100%; height:auto; }
+	/*------------------------------------------------------------------------------------*/
+	div.contentArea.login form,	
+	div.contentArea.kontakt form						{ padding:18px; width:76%; margin-top:30px; }
+	div.contentArea.login form a						{ padding:0 96px; }
+	/*------------------------------------------------------------------------------------*/
+	
+	div.contentArea.leistungen 	{ padding-top:12%; padding-top:12vh;}
+	div.contentArea.leistungen div	{ width:14.5vw; height:14.5vw; margin:4vh 0.2% 8px 0.2%; line-height:16vw; font-size:70%; }
+	div.contentArea.leistungen div:hover	{ line-height:17vw;  }
+	
+	
+	
+	
+	  }
+	  
+	  
+
+@media only screen
+	and (max-width: 768px) { 
+	
+	div.contentArea 			{ margin:60px 8vw auto 15vw; 
+								  height:80vh; width:75vw; 
+								  padding:1vh 1vw 1vh 1vw; }
+	/*------------------------------------------------------------------------------------*/							  
+	div.contentArea.ueberuns p 					{ display:block; width:80%; margin:4% 0 0 0;  }
+	div.contentArea.ueberuns p span.heading  	{ font-size:145%; }
+	/*------------------------------------------------------------------------------------*/	
+	div.contentArea.impressum 							{ font-size:100%; }
+	div.contentArea.impressum section:nth-child(3) 		{ margin:40px 84px 0 0; width:100px; } /* erste  TextBox */
+	div.contentArea.impressum section:nth-child(4) 		{ margin:40px 0 0 0;    width:165px; } /* zweite TextBox */
+	div.contentArea.impressum section:nth-child(5) 		{ margin:30px 0 0 0;    width:360px; } /* dritte TextBox */
+	/*------------------------------------------------------------------------------------*/
+	div.contentArea.login form,	
+	div.contentArea.kontakt form						{ padding:18px; width:76%; margin-top:30px; }
+	div.contentArea.login form a						{ padding:0 96px; }
+	/*------------------------------------------------------------------------------------*/
+	
+	div.contentArea.leistungen 	{ padding-top:12%; padding-top:12vh;}
+	div.contentArea.leistungen div	{ width:14.5vw; height:14.5vw; margin:4vh 0.2% 8px 0.2%; line-height:16vw; font-size:70%; }
+	div.contentArea.leistungen div:hover	{ line-height:17vw;  }
+	
+	
+	  }
+
+
+@media only screen
+	and (max-width: 480px) {
+			
+	div.contentArea.impressum section:nth-child(3) 		{ margin:10px 84px 0 0;  } /* erste  TextBox */
+	div.contentArea.impressum section:nth-child(4) 		{ margin:10px 0 0 0;     } /* zweite TextBox */
+	div.contentArea.impressum section:nth-child(5) 		{ margin:10px 0 0 0;     } /* dritte TextBox */
+			
+			
+	div.contentArea.ueberuns 					        { font-size:80%; }	
+			
+			
+			
+		 }
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+	div.contentArea.impressum 							{ font-size:80%; }
+	div.contentArea.impressum section:nth-child(3) 		{ margin:10px 84px 0 0;  } /* erste  TextBox */
+	div.contentArea.impressum section:nth-child(4) 		{ margin:10px 0 0 0;     } /* zweite TextBox */
+	div.contentArea.impressum section:nth-child(5) 		{ margin:10px 0 0 0;     } /* dritte TextBox */
+
+	div.contentArea 									{ height:auto;  }
+
+	div.contentArea.login form,	
+	div.contentArea.kontakt form						{ margin-top:60px; }
+
+	  }
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+	
+	
+div.contentArea.login form,	
+div.contentArea.kontakt form								{ margin-top:10px; }
+div.contentArea.login form input[type="text"],
+div.contentArea.login form input[type="password"],
+div.contentArea.kontakt form input[type="text"],
+div.contentArea.kontakt form input[type="tel"],
+div.contentArea.kontakt form input[type="email"],
+ div.contentArea.kontakt form textarea 						{ margin-bottom:4px; padding:3px 2%; font-size:80%; }
+div.contentArea.kontakt form textarea 						{  }
+div.contentArea.login form a,
+div.contentArea.login form button[type="submit"],
+div.contentArea.kontakt form button[type="submit"]			{ line-height: 36px; font-size:90%; }
+
+
+	div.contentArea.ueberuns 					{ font-size:70%; }
+
+
+	div.contentArea.impressum 	{ font-size:70%;  }
+	
+	div.contentArea.impressum section:nth-child(3) 				{ margin:50px 0px 0 0; width: 90px;  } /* erste  TextBox */
+	div.contentArea.impressum section:nth-child(4) 				{ margin:50px 0px 0 0; width:140px;  } /* zweite TextBox */
+	div.contentArea.impressum section:nth-child(5) 				{ margin:50px 0 0 0;   width:240px;  } /* dritte TextBox */
+
+
+	div.contentArea.leistungen 	{ padding-top:4%; padding-top:4vh;}
+	div.contentArea.leistungen div	{ width:14.5vw; height:14.5vw; margin:8px 0.2% 8px 0.2%; line-height:16vw; font-size:70%; }
+	div.contentArea.leistungen div:hover	{ line-height:17vw;  }
+
+	div.contentArea.leistungen h2	{ display:none; }
+
+	 }
